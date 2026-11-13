@@ -1,4 +1,4 @@
-# Koda her push'ta FaceSwap imajını derler ve ghcr.io/<kullanıcı>/faceswap:latest olarak yayınlar.
+# Koda her push'ta FaceSwap imajını derler ve ghcr.io/<kullanıcı>/faceswap-hazir:latest olarak yayınlar.
 name: imaj
 on:
   push:
@@ -28,5 +28,5 @@ jobs:
           push: true
           build-args: VERSION=${{ github.run_number }}
           tags: |
-            ghcr.io/${{ github.repository_owner }}/faceswap:latest
-            ghcr.io/${{ github.repository_owner }}/faceswap:${{ github.run_number }}
+            ghcr.io/${{ github.repository_owner }}/faceswap-hazir:latest
+            ghcr.io/${{ github.repository_owner }}/faceswap-hazir:${{ github.run_number }}

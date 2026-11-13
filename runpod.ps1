@@ -38,7 +38,7 @@ $Api = 'https://rest.runpod.io/v1'
 # Tercih sırası: önce 4090, bulunamazsa diğerleri (hepsi 16-24 GB)
 $Gpus = @('NVIDIA GeForce RTX 4090', 'NVIDIA RTX A5000', 'NVIDIA GeForce RTX 3090', 'NVIDIA GeForce RTX 3090 Ti', 'NVIDIA RTX 4000 Ada Generation', 'NVIDIA RTX A6000', 'NVIDIA L40', 'NVIDIA L4', 'NVIDIA RTX A4500', 'NVIDIA RTX A4000')
 $Image = 'runpod/pytorch:1.5.0-cu1281-torch280-ubuntu2404'
-$HazirImaj = 'ghcr.io/ozgurgokce1905/faceswap:latest'   # GitHub Actions derler (docker/Dockerfile)
+$HazirImaj = 'ghcr.io/ozgurgokce1905/faceswap-hazir:latest'   # GitHub Actions derler (docker/Dockerfile)
 if ($Cloud -eq 'imaj') {
     $Image = $HazirImaj
     # En iyi kart önce: 5090 > 4090 > L40S > H100 > diğerleri (FaceFusion için 5090 en hızlı/ucuz)
