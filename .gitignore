@@ -1,0 +1,9 @@
+venv/
+facefusion/
+data/
+__pycache__/
+*.pyc
+
+*.apk
+app/build/
+app/.dart_tool/
